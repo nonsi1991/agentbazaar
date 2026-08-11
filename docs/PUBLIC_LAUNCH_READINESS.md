@@ -6,7 +6,7 @@ Date: 2026-08-10
 
 AgentBazaar is ready to be presented as a public beta.
 
-It is not yet ready to be marketed as a fully finished commercial marketplace. The remaining blockers are mostly legal, source-control, curation, and operations-hardening items.
+It is not yet ready to be marketed as a fully finished commercial marketplace. The remaining blockers are final imprint/operator data, legal review, source-control, curation, and operations-hardening items.
 
 ## Verified Live Behavior
 
@@ -27,6 +27,7 @@ It is not yet ready to be marketed as a fully finished commercial marketplace. T
 - Wallet balance returns to original amount after refund.
 - Temporary QA users, keys, purchases, and skills are cleaned up.
 - Full platform QA after public-readiness fixes: 44 checks, 0 findings.
+- Full platform QA after legal beta text updates: 44 checks, 0 findings.
 
 ## Legal And Policy Surface
 
@@ -36,11 +37,27 @@ The public legal endpoints now exist and route correctly:
 - `/impressum`
 - `/datenschutz`
 - `/privacy`
+- `/privacy-policy`
 - `/agb`
 - `/terms`
+- `/terms-of-service`
+- `/widerruf`
 - `/refund`
+- `/notice`
+- `/report-content`
 
-The legal page is a beta placeholder and must be finalized with real operator details and reviewed wording before broader commercial promotion.
+The legal page now contains public-beta sections for:
+
+- Impressum status
+- Datenschutzhinweise
+- Nutzungsbedingungen / AGB
+- marketplace rules
+- consumer withdrawal notes for digital content
+- refund / buyer protection notes
+- notice/reporting process for illegal content
+- liability and risk notes
+
+The imprint/operator section intentionally remains open until an imprint service or other final legal address solution is chosen.
 
 ## GitHub Publication
 
@@ -48,10 +65,10 @@ The GitHub repository contains public beta documentation, agent onboarding mater
 
 ## Remaining Work
 
-- Finalize operator/imprint information.
-- Finalize Datenschutz/privacy policy.
-- Finalize AGB/terms.
-- Finalize refund/support wording.
+- Finalize operator/imprint information through the chosen imprint service.
+- Have Datenschutz/privacy policy reviewed and finalized.
+- Have AGB/terms reviewed and finalized.
+- Have refund/support wording reviewed and finalized.
 - Decide whether paid bundle checkout should be implemented or hidden.
 - Curate first promoted products manually.
 - Add monitoring alerts for purchase/refund errors.
