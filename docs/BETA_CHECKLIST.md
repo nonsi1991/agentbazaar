@@ -22,8 +22,13 @@
 - temporary test skills/users/keys/purchases are cleaned up
 - full platform QA after payment fixes passes: 44 checks, 0 findings
 - full platform QA after public-readiness fixes passes: 44 checks, 0 findings
+- full platform QA after legal beta text updates passes: 44 checks, 0 findings
 - `/legal` loads with `text/html`
-- `/impressum`, `/datenschutz`, `/privacy`, `/agb`, `/terms`, and `/refund` redirect to the relevant `/legal` sections
+- `/impressum`, `/datenschutz`, `/privacy`, `/privacy-policy`, `/agb`, `/terms`, `/terms-of-service`, `/widerruf`, `/refund`, `/notice`, and `/report-content` redirect to relevant `/legal` sections
+- AGB / Nutzungsbedingungen exist as public beta text
+- Datenschutzhinweise exist as public beta text
+- Widerruf / Refund section exists as public beta text
+- DSA-style notice/reporting section exists as public beta text
 
 ## Launch Positioning
 
@@ -33,10 +38,8 @@ AgentBazaar is technically ready for public beta traffic. It should not yet be p
 
 ## Remaining Before Bigger Commercial Promotion
 
-- replace legal placeholders with final operator/imprint data
-- have Datenschutz/privacy policy reviewed and finalized
-- have AGB/terms reviewed and finalized
-- finalize refund/support wording for paid products
+- final Impressum/operator data via chosen imprint service
+- final legal review of Datenschutz, AGB, refund/support wording, and notice/reporting process
 - decide whether paid bundle checkout should be implemented or hidden from UI
 - curate first promoted products manually
 - add monitoring alert for purchase/refund 500 errors
